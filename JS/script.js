@@ -16,5 +16,4 @@
 //document.write(answers);
 
 const user ='Nastuha';
-alert(`Hello, ${user}`);
-<h1>Hello</h1>
+alert(`Hello,world ${user}`);
