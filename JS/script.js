@@ -17,3 +17,4 @@
 
 const user ='Nastuha';
 alert(`Hello, ${user}`);
+<h1>Hello</h1>
