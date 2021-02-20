@@ -35,33 +35,33 @@ const personalMovieDV = {
 };
 // //Цикл из повторения 2х вопросов с условиями черезе for
 
-// function remembrMyFilms() {
-//     for (let i = 0; i < 2; i++) {
-//         const a = prompt('Один из последних просмотренных фильмов?', ''),
-//             b = prompt('На сколько оцените его?', '');
+function remembrMyFilms() {
+    for (let i = 0; i < 2; i++) {
+        const a = prompt('Один из последних просмотренных фильмов?', ''),
+            b = prompt('На сколько оцените его?', '');
 
-//         if (a != null && b != null && a != '' && b != '' && a.length < 50) {
-//             personalMovieDV.movies[a] = b;
-//             console.log('done');
-//         } else {
-//             console.log('error');
-//             // Остановили цикл
-//             i--;
-//         }
+        if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+            personalMovieDV.movies[a] = b;
+            console.log('done');
+        } else {
+            console.log('error');
+            // Остановили цикл
+            i--;
+        }
 
 
-//     }
-// }
-// remembrMyFilms();
+    }
+}
+remembrMyFilms();
 console.log(personalMovieDV);
 
 
-// function showMyDV(hidden) {
-//     if (!hidden) {
-//         console.log(personalMovieDV);
-//     }
-// }
-// showMyDV(personalMovieDV.ptivat);
+function showMyDV(hidden) {
+    if (!hidden) {
+        console.log(personalMovieDV);
+    }
+}
+showMyDV(personalMovieDV.ptivat);
 
 function writeYourGenres() {
     for (let i = 1; i<4; i++ ) {
